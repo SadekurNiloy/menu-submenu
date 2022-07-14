@@ -43,9 +43,24 @@ body {
     top: 100%;
     display: none;
 }
-.main-menu ul li:hover ul {
+.main-menu ul li:hover > ul {
     display: block;
 }
 .main-menu ul ul li:hover a {
     background-color: #74b9ff;
+}
+.main-menu ul ul ul {
+    left: 100%;
+    top: 0;
+}
+.main-menu ul ul ul li:hover a {
+    background-color: thistle;
+}
+.main-menu ul ul ul ul {
+    left: -100%;
+    top: 0;
+    z-index: 9999;
+}
+.main-menu ul ul ul ul li:hover a {
+    background-color: #833471;
 }
